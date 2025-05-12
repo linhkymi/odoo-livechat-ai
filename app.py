@@ -3,6 +3,7 @@ import openai
 import os
 
 app = Flask(__name__)
+import os
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
 @app.route("/webhook", methods=["POST"])
